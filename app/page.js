@@ -7,35 +7,37 @@ import { MdEmail, MdPhone } from "react-icons/md";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-br from-purple-50 via-white to-purple-100 text-gray-800">
+    <main className="bg-gradient-to-br from-blue-50 via-white to-indigo-100 text-gray-800">
 
       {/* NAVBAR */}
-      <nav className="sticky top-0 z-50 backdrop-blur bg-white/70 shadow-sm">
-  <div className="max-w-5xl mx-auto flex justify-between items-center px-4 py-4">
+<nav className="fixed top-4 left-0 right-0 z-50 flex justify-center">
+  <div className="backdrop-blur-md bg-gradient-to-r from-blue-200/80 via-white/70 to-indigo-200/80 shadow-lg rounded-full px-8 py-3 flex items-center gap-10 border border-blue-100">
     
-    <h1 className="text-xl font-bold text-purple-600">Rafdi Innaya</h1>
+    <h1 className="text-sm font-bold text-blue-600">
+      Portfolio
+    </h1>
 
-    <div className="flex gap-10 text-sm font-medium">
-      <a href="#home" className="hover:text-purple-600 transition">Home</a>
-      <a href="#skills" className="hover:text-purple-600 transition">Skills</a>
-      <a href="#projects" className="hover:text-purple-600 transition">Projects</a>
-      <a href="#contact" className="hover:text-purple-600 transition">Contact</a>
+    <div className="flex gap-8 text-sm font-medium text-gray-700">
+      <a href="#home" className="hover:text-blue-600 transition">Home</a>
+      <a href="#skills" className="hover:text-blue-600 transition">Skills</a>
+      <a href="#projects" className="hover:text-blue-600 transition">Projects</a>
+      <a href="#contact" className="hover:text-blue-600 transition">Contact</a>
     </div>
 
   </div>
 </nav>
 
       {/* HERO */}
-      <section id="home" className="py-20 flex items-center px-8">
+      <section id="home" className="pt-32 pb-20 flex items-center px-8">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
 
           <div>
-            <span className="bg-purple-100 text-purple-600 px-4 py-1 rounded-full text-xs font-semibold">
+            <span className="bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-xs font-semibold">
               Software Engineer
             </span>
 
             <h1 className="text-5xl font-bold mt-4 leading-tight">
-              Rafdi <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-indigo-500">Innaya</span>
+              Rafdi <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">Innaya</span>
             </h1>
 
             <p className="mt-6 text-gray-600 max-w-lg">
@@ -44,10 +46,10 @@ export default function Home() {
             </p>
 
             <div className="mt-8 flex gap-4">
-              <a href="#projects" className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-6 py-3 rounded-full shadow-lg hover:scale-105 transition">
+              <a href="#projects" className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-6 py-3 rounded-full shadow-lg hover:scale-105 transition">
                 Lihat Project
               </a>
-              <a href="#contact" className="border border-purple-400 text-purple-600 px-6 py-3 rounded-full hover:bg-purple-50 transition">
+              <a href="#contact" className="border border-blue-400 text-blue-600 px-6 py-3 rounded-full hover:bg-blue-50 transition">
                 Kontak
               </a>
             </div>
@@ -56,14 +58,11 @@ export default function Home() {
           {/* IMAGE SECTION */}
 <div className="relative flex justify-center items-center">
 
-  {/* GLOW BACKGROUND */}
-  <div className="absolute w-80 h-80 bg-purple-400/30 rounded-full blur-3xl"></div>
+  <div className="absolute w-80 h-80 bg-blue-400/30 rounded-full blur-3xl"></div>
   <div className="absolute w-96 h-96 bg-indigo-400/20 rounded-full blur-3xl translate-x-10 translate-y-10"></div>
 
-  {/* SHAPE ORGANIC (blob background) */}
-  <div className="absolute w-72 h-72 bg-gradient-to-br from-purple-200 to-indigo-200 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] blur-xl opacity-70"></div>
+  <div className="absolute w-72 h-72 bg-gradient-to-br from-blue-200 to-indigo-200 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] blur-xl opacity-70"></div>
 
-  {/* FOTO */}
   <img
     src="/foto.jpeg"
     alt="profile"
@@ -79,14 +78,14 @@ export default function Home() {
   <div className="max-w-6xl mx-auto px-8">
 
     <div className="text-center mb-16">
-      <p className="text-purple-500 font-semibold">Skills</p>
-      <h2 className="text-4xl font-bold text-purple-600">
-        My Skills & Tools
-      </h2>
-      <p className="text-gray-600">
-        Teknologi yang biasa saya gunakan dalam pengembangan
-      </p>
-    </div>
+  <h2 className="text-4xl font-bold">
+    <span className="text-gray-800">My </span>
+    <span className="text-blue-600">Skills</span>
+  </h2>
+  <p className="text-gray-600 mt-2">
+    Teknologi yang biasa saya gunakan dalam pengembangan
+  </p>
+</div>
 
    <div className="flex flex-wrap justify-center gap-16 max-w-2xl mx-auto">
 
@@ -107,9 +106,9 @@ export default function Home() {
   transition={{ duration: 0.4, delay: i * 0.1 }}
   viewport={{ once: true }}
   whileHover={{ scale: 1.08 }}
-  className="w-[120px] bg-purple-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col items-center gap-3"
+  className="w-[120px] bg-blue-50 p-6 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col items-center gap-3"
 >
-          <div className="text-3xl text-purple-500">
+          <div className="text-3xl text-blue-500">
             {skill.icon}
           </div>
           <p className="text-sm font-semibold">{skill.name}</p>
@@ -120,17 +119,19 @@ export default function Home() {
   </div>
 </section>
 
-     {/* PROJECTS */}
-<section id="projects" className="py-12 bg-purple-50">
+{/* PROJECTS */}
+<section id="projects" className="py-12 bg-blue-50">
   <div className="max-w-6xl mx-auto px-8">
 
     <div className="text-center mb-16">
-      <p className="text-purple-500 font-semibold">Portfolio</p>
-      <h2 className="text-4xl font-bold text-purple-600">Project</h2>
-      <p className="text-gray-600">
-        Berikut beberapa project yang pernah saya kembangkan
-      </p>
-    </div>
+  <h2 className="text-4xl font-bold">
+    <span className="text-gray-800">My </span>
+    <span className="text-blue-600">Projects</span>
+  </h2>
+  <p className="text-gray-600 mt-2">
+    Berikut beberapa project yang pernah saya kembangkan
+  </p>
+</div>
 
     <div className="grid md:grid-cols-2 gap-12">
 
@@ -161,21 +162,25 @@ export default function Home() {
         <div className="pt-4 border-t">
           <p className="text-xs font-bold mb-2">MY CONTRIBUTION</p>
           <div className="flex flex-wrap gap-2 mb-4">
-            <span className="bg-purple-100 text-purple-600 px-3 py-1 text-xs rounded-full">
+            <span className="bg-blue-100 text-blue-600 px-3 py-1 text-xs rounded-full">
               UI/UX Design
             </span>
-            <span className="bg-purple-100 text-purple-600 px-3 py-1 text-xs rounded-full">
+            <span className="bg-blue-100 text-blue-600 px-3 py-1 text-xs rounded-full">
               Frontend Development
             </span>
           </div>
 
           {/* BUTTON */}
-          <a
-            href="#"
-            className="text-sm text-purple-600 font-semibold hover:underline"
-          >
-            Lihat Detail →
-          </a>
+          <div className="mt-auto pt-6 flex justify-center">
+  <a
+    href="https://figma.com/proto/Qsp8gffygd2v7YziQ0YeQA/Design?node-id=166-788&p=f&t=mO7hLPfxUTZ9rnhK-1&scaling=scale-down-width&content-scaling=fixed&page-id=158%3A322&starting-point-node-id=166%3A788"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:scale-105 transition"
+  >
+    Lihat Project
+  </a>
+</div>
         </div>
       </motion.div>
 
@@ -205,17 +210,22 @@ export default function Home() {
         <div className="pt-4 border-t">
           <p className="text-xs font-bold mb-2">MY CONTRIBUTION</p>
           <div className="flex flex-wrap gap-2 mb-4">
-            <span className="bg-purple-100 text-purple-600 px-3 py-1 text-xs rounded-full">
+            <span className="bg-blue-100 text-blue-600 px-3 py-1 text-xs rounded-full">
               UI/UX Design
             </span>
-            <span className="bg-purple-100 text-purple-600 px-3 py-1 text-xs rounded-full">
+            <span className="bg-blue-100 text-blue-600 px-3 py-1 text-xs rounded-full">
               Frontend Development
             </span>
           </div>
 
-          <a href="#" className="text-sm text-purple-600 font-semibold hover:underline">
-            Lihat Detail →
-          </a>
+         <div className="mt-auto pt-6 flex justify-center">
+  <a
+    href="#"
+    className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:scale-105 transition"
+  >
+    Lihat Project
+  </a>
+</div>
         </div>
       </motion.div>
 
@@ -247,17 +257,22 @@ export default function Home() {
         <div className="pt-4 border-t">
           <p className="text-xs font-bold mb-2">MY CONTRIBUTION</p>
           <div className="flex flex-wrap gap-2 mb-4">
-            <span className="bg-purple-100 text-purple-600 px-3 py-1 text-xs rounded-full">
+            <span className="bg-blue-100 text-blue-600 px-3 py-1 text-xs rounded-full">
               UI/UX Design
             </span>
-            <span className="bg-purple-100 text-purple-600 px-3 py-1 text-xs rounded-full">
+            <span className="bg-blue-100 text-blue-600 px-3 py-1 text-xs rounded-full">
               Frontend Development
             </span>
           </div>
 
-          <a href="#" className="text-sm text-purple-600 font-semibold hover:underline">
-            Lihat Detail →
-          </a>
+          <div className="mt-auto pt-6 flex justify-center">
+  <a
+    href="https://www.figma.com/proto/MCVFf709Kd90kWntWdXTi3/UIUX-Amarine---Massive-Project--Copy-?node-id=5001-4074&p=f&t=Ma84qWdvAfi6VhYE-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=5001%3A4190"
+    className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:scale-105 transition"
+  >
+    Lihat Project
+  </a>
+</div>
         </div>
       </motion.div>
 
@@ -267,43 +282,43 @@ export default function Home() {
 
       {/* CONTACT */}
       <section id="contact" className="py-16 text-center bg-white">
-  <h2 className="text-3xl font-bold text-purple-600 mb-4">
+  <h2 className="text-3xl font-bold text-blue-600 mb-4">
     Contact
   </h2>
 
   <p className="text-gray-600 mb-10">
-    Yuk connect dan kolaborasi 🚀
+    Yuk connect dan kolaborasi
   </p>
 
   <div className="flex justify-center flex-wrap gap-6">
 
     {/* Instagram */}
-    <a href="https://instagram.com/iam.naaayy" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-purple-50 hover:bg-purple-100 transition shadow-sm">
-      <FaInstagram className="text-purple-500 text-xl" />
+    <a href="https://instagram.com/iam.naaayy" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-blue-50 hover:bg-blue-100 transition shadow-sm">
+      <FaInstagram className="text-blue-500 text-xl" />
       <span className="text-sm">Instagram</span>
     </a>
 
     {/* LinkedIn */}
-    <a href="https://linkedin.com/in/rafdi-innaya" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-purple-50 hover:bg-purple-100 transition shadow-sm">
-      <FaLinkedin className="text-purple-500 text-xl" />
+    <a href="https://linkedin.com/in/rafdi-innaya" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-blue-50 hover:bg-blue-100 transition shadow-sm">
+      <FaLinkedin className="text-blue-500 text-xl" />
       <span className="text-sm">LinkedIn</span>
     </a>
 
     {/* GitHub */}
-    <a href="https://github.com/RafdiInnaya" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-purple-50 hover:bg-purple-100 transition shadow-sm">
-      <FaGithub className="text-purple-500 text-xl" />
+    <a href="https://github.com/RafdiInnaya" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-blue-50 hover:bg-blue-100 transition shadow-sm">
+      <FaGithub className="text-blue-500 text-xl" />
       <span className="text-sm">GitHub</span>
     </a>
 
     {/* Email */}
-    <a href="mailto:rafdiinnaya@gmail.com" className="flex items-center gap-2 px-5 py-3 rounded-full bg-purple-50 hover:bg-purple-100 transition shadow-sm">
-      <MdEmail className="text-purple-500 text-xl" />
+    <a href="mailto:rafdiinnaya@gmail.com" className="flex items-center gap-2 px-5 py-3 rounded-full bg-blue-50 hover:bg-blue-100 transition shadow-sm">
+      <MdEmail className="text-blue-500 text-xl" />
       <span className="text-sm">Email</span>
     </a>
 
     {/* Phone */}
-    <a href="https://wa.me/6285363747011" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-purple-50 hover:bg-purple-100 transition shadow-sm">
-      <MdPhone className="text-purple-500 text-xl" />
+    <a href="https://wa.me/6285363747011" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-blue-50 hover:bg-blue-100 transition shadow-sm">
+      <MdPhone className="text-blue-500 text-xl" />
       <span className="text-sm">Phone</span>
     </a>
 
