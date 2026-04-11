@@ -41,8 +41,8 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 text-gray-600 max-w-lg">
-              Saya berfokus pada UI/UX Design dan Frontend Development.
-              Membuat tampilan aplikasi yang clean, modern, dan mudah digunakan.
+              Saya berfokus pada pengembangan aplikasi dengan membangun sistem yang fungsional, responsif, dan mudah digunakan. 
+Memiliki pemahaman dalam pengolahan data, pengembangan fitur, serta perancangan alur sistem untuk mendukung kebutuhan pengguna.
             </p>
 
             <div className="mt-8 flex gap-4">
@@ -220,7 +220,7 @@ export default function Home() {
 
          <div className="mt-auto pt-6 flex justify-center">
   <a
-    href="#"
+    href="https://rilog.id/"
     className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:scale-105 transition"
   >
     Lihat Project
@@ -292,11 +292,6 @@ export default function Home() {
 
   <div className="flex justify-center flex-wrap gap-6">
 
-    {/* Instagram */}
-    <a href="https://instagram.com/iam.naaayy" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-blue-50 hover:bg-blue-100 transition shadow-sm">
-      <FaInstagram className="text-blue-500 text-xl" />
-      <span className="text-sm">Instagram</span>
-    </a>
 
     {/* LinkedIn */}
     <a href="https://linkedin.com/in/rafdi-innaya" target="_blank" className="flex items-center gap-2 px-5 py-3 rounded-full bg-blue-50 hover:bg-blue-100 transition shadow-sm">
