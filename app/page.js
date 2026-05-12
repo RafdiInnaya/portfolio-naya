@@ -173,7 +173,7 @@ Memiliki pemahaman dalam pengolahan data, pengembangan fitur, serta perancangan 
           {/* BUTTON */}
           <div className="mt-auto pt-6 flex justify-center">
   <a
-    href="https://figma.com/proto/Qsp8gffygd2v7YziQ0YeQA/Design?node-id=166-788&p=f&t=mO7hLPfxUTZ9rnhK-1&scaling=scale-down-width&content-scaling=fixed&page-id=158%3A322&starting-point-node-id=166%3A788"
+    href="https://www.figma.com/proto/v3KuV74XJlt5Cx9Q5M8PJb/Design-PANTAU?node-id=166-788&p=f&t=U1JAPlAA5YzWJKgs-1&scaling=min-zoom&content-scaling=fixed&page-id=158%3A322&starting-point-node-id=166%3A788"
     target="_blank"
     rel="noopener noreferrer"
     className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:scale-105 transition"
